@@ -1,47 +1,13 @@
 // Generate QR Code
 document.addEventListener('DOMContentLoaded', function() {
     const contactData = {
-        name: 'Michel Anderson',
-        title: 'Social Media Blogger',
-        email: 'michelleanderson@email.com',
-        website: 'www.michelleanderson.com',
-        phone: '+1 (678) 234 545 6785'
+        name: 'Glenn Santos',
+        title: 'AI Consultant',
+        email: 'glenn@glennsantos.com',
+        calendar: 'cal.com/glennsantos'
     };
 
-    // Create vCard format for QR code
-    const vCardData = `BEGIN:VCARD
-VERSION:3.0
-FN:${contactData.name}
-TITLE:${contactData.title}
-EMAIL:${contactData.email}
-URL:${contactData.website}
-TEL:${contactData.phone}
-END:VCARD`;
-
-    // Generate QR Code
-    QRCode.toCanvas(document.getElementById('qrcode'), vCardData, {
-        width: 180,
-        margin: 1,
-        color: {
-            dark: '#000000',
-            light: '#FFFFFF'
-        },
-        errorCorrectionLevel: 'M'
-    }, function (error) {
-        if (error) {
-            console.error('QR Code generation failed:', error);
-            // Fallback: create QR code with website URL
-            QRCode.toCanvas(document.getElementById('qrcode'), contactData.website, {
-                width: 180,
-                margin: 1,
-                color: {
-                    dark: '#000000',
-                    light: '#FFFFFF'
-                },
-                errorCorrectionLevel: 'M'
-            });
-        }
-    });
+    // QR codes are now static images - no dynamic generation needed
 });
 
 // Service Worker registration for PWA

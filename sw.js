@@ -5,6 +5,8 @@ const urlsToCache = [
     '/styles.css',
     '/app.js',
     '/manifest.json',
+    '/Screenshot_20250823_101817_WhatsApp_1755916301309.jpg',
+    '/Screenshot_20250823_101835_LinkedIn_1755916301228.jpg',
     'https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js'
 ];
 

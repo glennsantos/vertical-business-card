@@ -69,15 +69,15 @@ body {
     margin: 20px 0;
 }
 
-#qrcode {
+.qr-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     background: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-#qrcode canvas {
-    border-radius: 5px;
+    margin: 0 10px;
 }
 
 .contact-info {
@@ -93,7 +93,7 @@ body {
     margin-bottom: 15px;
 }
 
-.email, .website, .phone {
+.email, .website, .phone, .calendar {
     font-size: 14px;
     color: #666;
     line-height: 1.4;
@@ -112,6 +112,11 @@ body {
     color: #333;
 }
 
+.calendar {
+    color: #4a90e2;
+    font-weight: 500;
+}
+
 @media (max-width: 400px) {
     .business-card {
         width: 280px;
@@ -126,7 +131,7 @@ body {
         font-size: 16px;
     }
     
-    .email, .website, .phone {
+    .email, .website, .phone, .calendar {
         font-size: 13px;
     }
 }
