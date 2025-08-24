@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="business-card">
+        <div class="card-content">
+            <h1 class="name">MICHEL ANDERSON</h1>
+            
+            <div class="qr-container">
+                <div id="qrcode"></div>
+            </div>
+            
+            <div class="contact-info">
+                <h2 class="title">Social Media Blogger</h2>
+                <p class="email">michelleanderson@email.com</p>
+                <p class="website">www.michelleanderson.com</p>
+                <p class="phone">+1 (678) 234 545 6785</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
